@@ -1,0 +1,18 @@
+[
+  {
+  
+  "question": "Face the wind!",
+  "answers":["Yasso", "Teemo", "Idk"],
+  "correctAnswerIndex":0,
+  "feedback":"var is the keyword"
+  
+},
+{
+  
+  "question": "How should we play Yasso?",
+  "answers":["QE", "EQ", "RRRRR"],
+  "correctAnswerIndex":3,
+  "feedback":"R is the most important thing!"
+  
+}
+]

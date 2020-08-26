@@ -4,15 +4,15 @@
   "question": "Face the wind!",
   "answers":["Yasso", "Teemo", "Idk"],
   "correctAnswerIndex":0,
-  "feedback":"var is the keyword"
+  "feedback":"Happy Yasso"
   
 },
 {
   
   "question": "How should we play Yasso?",
-  "answers":["QE", "EQ", "RRRRR"],
-  "correctAnswerIndex":3,
-  "feedback":"R is the most important thing!"
+  "answers":["QE", "EEEEEE", "RRRRR"],
+  "correctAnswerIndex":2,
+  "feedback":"lol!"
   
 }
 ]

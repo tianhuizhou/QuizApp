@@ -97,6 +97,84 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="EWb-hB-VJi">
+            <objects>
+                <viewController storyboardIdentifier="ResultVC" id="l2h-GY-Ezu" customClass="ResultViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Tg-H7-ZvT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-ql-6yR" userLabel="DimView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSP-DP-ucu" userLabel="DialogView">
+                                <rect key="frame" x="40" y="144" width="334" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GQF-Zk-3mx">
+                                        <rect key="frame" x="50" y="50" width="234" height="518"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIK-5T-Vby">
+                                                <rect key="frame" x="83.5" y="0.0" width="67.5" height="172.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmX-Kj-ISY">
+                                                <rect key="frame" x="0.0" y="172.5" width="234" height="173"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlI-c8-aXv">
+                                                <rect key="frame" x="0.0" y="345.5" width="234" height="172.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="dismissTapped:" destination="l2h-GY-Ezu" eventType="touchUpInside" id="B6g-fb-UC0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VmX-Kj-ISY" firstAttribute="width" secondItem="GQF-Zk-3mx" secondAttribute="width" id="FSc-Hr-Apl"/>
+                                            <constraint firstItem="QlI-c8-aXv" firstAttribute="width" secondItem="GQF-Zk-3mx" secondAttribute="width" id="hJ8-dA-ks2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GQF-Zk-3mx" secondAttribute="bottom" constant="50" id="Rlg-QJ-IOa"/>
+                                    <constraint firstItem="GQF-Zk-3mx" firstAttribute="top" secondItem="bSP-DP-ucu" secondAttribute="top" constant="50" id="qi1-hg-u4J"/>
+                                    <constraint firstAttribute="trailing" secondItem="GQF-Zk-3mx" secondAttribute="trailing" constant="50" id="rMg-bc-pBi"/>
+                                    <constraint firstItem="GQF-Zk-3mx" firstAttribute="leading" secondItem="bSP-DP-ucu" secondAttribute="leading" constant="50" id="viE-Z3-gzA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="D2E-ql-6yR" secondAttribute="bottom" id="5UT-jk-vSq"/>
+                            <constraint firstItem="jqZ-Lk-6pA" firstAttribute="bottom" secondItem="bSP-DP-ucu" secondAttribute="bottom" constant="100" id="6Cc-D6-Cde"/>
+                            <constraint firstItem="bSP-DP-ucu" firstAttribute="top" secondItem="jqZ-Lk-6pA" secondAttribute="top" constant="100" id="BEZ-iI-k5Z"/>
+                            <constraint firstItem="jqZ-Lk-6pA" firstAttribute="trailing" secondItem="bSP-DP-ucu" secondAttribute="trailing" constant="40" id="Pxk-SR-wr0"/>
+                            <constraint firstAttribute="trailing" secondItem="D2E-ql-6yR" secondAttribute="trailing" id="WJW-gt-AX0"/>
+                            <constraint firstItem="bSP-DP-ucu" firstAttribute="leading" secondItem="jqZ-Lk-6pA" secondAttribute="leading" constant="40" id="aHt-bw-ezc"/>
+                            <constraint firstItem="D2E-ql-6yR" firstAttribute="top" secondItem="1Tg-H7-ZvT" secondAttribute="top" id="gBN-5G-VgG"/>
+                            <constraint firstItem="D2E-ql-6yR" firstAttribute="leading" secondItem="1Tg-H7-ZvT" secondAttribute="leading" id="jwH-7M-6u0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jqZ-Lk-6pA"/>
+                    </view>
+                    <connections>
+                        <outlet property="dialogView" destination="bSP-DP-ucu" id="sUR-zq-9Yf"/>
+                        <outlet property="dimView" destination="D2E-ql-6yR" id="3Jl-7h-hTk"/>
+                        <outlet property="dismissButton" destination="QlI-c8-aXv" id="nqv-Z4-QYv"/>
+                        <outlet property="feedbackLabel" destination="VmX-Kj-ISY" id="nxf-Oi-Wkq"/>
+                        <outlet property="titleLabel" destination="IIK-5T-Vby" id="szU-4w-pto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGa-wu-M39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>

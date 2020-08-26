@@ -16,6 +16,7 @@
 		C58D577624F5B89800FE01EC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D577524F5B89800FE01EC /* Question.swift */; };
 		C58D577824F5B91000FE01EC /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D577724F5B91000FE01EC /* QuizModel.swift */; };
 		C58D577A24F5BF0100FE01EC /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = C58D577924F5BF0100FE01EC /* QuestionData.json */; };
+		C58D577C24F6009600FE01EC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D577B24F6009600FE01EC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C58D577524F5B89800FE01EC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C58D577724F5B91000FE01EC /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		C58D577924F5BF0100FE01EC /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
+		C58D577B24F6009600FE01EC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C58D576124F5B85000FE01EC /* AppDelegate.swift */,
 				C58D576324F5B85000FE01EC /* SceneDelegate.swift */,
 				C58D576524F5B85000FE01EC /* ViewController.swift */,
+				C58D577B24F6009600FE01EC /* ResultViewController.swift */,
 				C58D577524F5B89800FE01EC /* Question.swift */,
 				C58D577924F5BF0100FE01EC /* QuestionData.json */,
 				C58D577724F5B91000FE01EC /* QuizModel.swift */,
@@ -153,6 +156,7 @@
 				C58D576224F5B85000FE01EC /* AppDelegate.swift in Sources */,
 				C58D576424F5B85000FE01EC /* SceneDelegate.swift in Sources */,
 				C58D577824F5B91000FE01EC /* QuizModel.swift in Sources */,
+				C58D577C24F6009600FE01EC /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
